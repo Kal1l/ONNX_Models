@@ -2,10 +2,10 @@
 
 **Principais modelos já testados**
 
-- `SimianLuo/LCM_Dreamshaper_v7` (SD 1.5 + LCM, ultra‑rápido com poucos steps)
-- `etri-vilab/koala-700m` (SDXL comprimido, rápido em GPU)
-- `FFusion/FFusionXL-BASE` (SDXL base)
-- `stabilityai/sdxl-turbo` (variante Turbo)
+- [`SimianLuo/LCM_Dreamshaper_v7`](https://huggingface.co/SimianLuo/LCM_Dreamshaper_v7#latent-consistency-models)  (SD 1.5 + LCM, ultra‑rápido com poucos steps)
+- [`etri-vilab/koala-700m`](https://huggingface.co/etri-vilab/koala-700m)  (SDXL comprimido, rápido em GPU)
+- [`FFusion/FFusionXL-BASE`](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) (SDXL base)
+- [`stabilityai/sdxl-turbo`](https://huggingface.co/stabilityai/sdxl-turbo)(variante Turbo)
 
 ---
 
@@ -16,7 +16,7 @@
         
         ```python
         python -m venv .venv
-        . .\.venv\Scripts\Activate.ps
+        . .\\.venv\\Scripts\\Activate.ps
         ```
         
     2. Linux
@@ -41,7 +41,7 @@
     huggingface-cli login
     ```
     
-    - Cole seu **token** (criado em https://huggingface.co/settings/tokens).
+    - Cole seu **token** (criado em [https://huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)).
 
 ### Como utilizar
 
