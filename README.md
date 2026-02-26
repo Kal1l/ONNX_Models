@@ -48,9 +48,9 @@
 Os modelos estão divididos pelo nome e se são ou não ONNX. Você deve escolher qual modelo quer e utilizar o comando:
 
 ```python
-py [nome_do_modelo].python
+py [nome_do_modelo].py
 #ou
-python[nome_do_modelo].python
+python[nome_do_modelo].py
 ```
 
 Os modelo irá ser baixado na primeira execução, e a imagem será gerada em seguida, em execuções após a primeira, apenas gerara a imagem sem baixar o modelo novamente.
