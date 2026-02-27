@@ -23,7 +23,7 @@ ORT_PROVIDER = os.getenv("ORT_PROVIDER", "CPUExecutionProvider")
 # Prompt: se LCM_PROMPT não estiver definido, usa o DEFAULT_PROMPT de prompt_config.py
 PROMPT = os.getenv("LCM_PROMPT") or DEFAULT_PROMPT
 NEGATIVE_PROMPT = "low quality, blurry, deformed"
-NUM_STEPS = int(os.getenv("LCM_STEPS", "50"))           # LCM funciona bem com 1–8
+NUM_STEPS = int(os.getenv("LCM_STEPS", "4"))           # LCM funciona bem com 1–8
 GUIDANCE = float(os.getenv("LCM_GUIDANCE", "8.0"))     # sugestão comum
 # Resolução da imagem (reduza se estiver com pouco RAM/VRAM)
 HEIGHT = int(os.getenv("LCM_HEIGHT", "512"))

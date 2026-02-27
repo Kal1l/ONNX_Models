@@ -19,7 +19,7 @@ DTYPE = torch.float16 if os.getenv("LCM_FP16", "0") == "1" and DEVICE == "cuda" 
 
 PROMPT = os.getenv("LCM_PROMPT") or DEFAULT_PROMPT
 NEGATIVE_PROMPT = os.getenv("LCM_NEGATIVE", "low quality, blurry, deformed")
-NUM_STEPS = int(os.getenv("LCM_STEPS", "8"))
+NUM_STEPS = int(os.getenv("LCM_STEPS", "4"))
 GUIDANCE = float(os.getenv("LCM_GUIDANCE", "8.0"))
 HEIGHT = int(os.getenv("LCM_HEIGHT", "512"))
 WIDTH = int(os.getenv("LCM_WIDTH", "512"))
