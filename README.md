@@ -1,6 +1,6 @@
 # ONNX Models
 
-**Principais modelos já testados**
+**Principais modelos**
 
 - [`SimianLuo/LCM_Dreamshaper_v7`](https://huggingface.co/SimianLuo/LCM_Dreamshaper_v7#latent-consistency-models)  (SD 1.5 + LCM, ultra‑rápido com poucos steps)
 - [`etri-vilab/koala-700m`](https://huggingface.co/etri-vilab/koala-700m)  (SDXL comprimido, rápido em GPU)
