@@ -30,8 +30,17 @@
     - Em caso de erros, mesmo com as depedências
     
     ```python
-    pip install --upgrade diffusers transformers accelerate huggingface_hub[cli] safetensors onnx numpy
+    pip install --upgrade accelerate huggingface_hub[cli] safetensors onnx numpy pillow
     ```
+
+    Para **SDXL Turbo em ONNX** (Optimum + ONNX Runtime), use versões compatíveis:
+
+    ```python
+    pip install "optimum[onnxruntime]" onnxruntime
+    pip install "diffusers==0.35.1" "transformers==4.48.3" sentencepiece protobuf
+    ```
+
+    - GPU (opcional): instale `onnxruntime-gpu` e use provider `CUDAExecutionProvider`.
     
 3. (Opcional) Autenticar no Hugging Face
     
@@ -56,3 +65,17 @@ python[nome_do_modelo].py
 Os modelo irá ser baixado na primeira execução, e a imagem será gerada em seguida, em execuções após a primeira, apenas gerara a imagem sem baixar o modelo novamente.
 
 Os resultados da execução atual são mostrados no terminal ao final da execução + armazenados na pasta logs, as imagens geradas são armazenadas na pasta images.
+
+---
+
+## SDXL Turbo (ONNX)
+
+Script: `sdxl_turbo_onnx.py`
+
+Exemplo:
+
+```python
+python sdxl_turbo_onnx.py --prompt "a cute robot barista, latte art, cinematic" --steps 1 --num-images 1
+```
+
+Ele salva as imagens em `images/` e os logs (tempos) em `logs/`.
